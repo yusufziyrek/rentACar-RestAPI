@@ -16,7 +16,7 @@
 
    ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/843453bc-b64a-410b-9e02-cb9af60b862f)
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/c589a92a-017e-4d6f-943c-5725253b7b32)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/2f2b2089-f8d7-4876-8b9c-2960a311a25a)
 
 
    -Model operations
