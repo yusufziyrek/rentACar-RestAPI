@@ -56,6 +56,7 @@ public class BrandsController {
 	}
 
 	@PutMapping()
+	@ResponseStatus(code = HttpStatus.ACCEPTED)
 	public void update(@RequestBody @Valid UpdateBrandRequest updateBrandRequest) {
 		this.brandService.update(updateBrandRequest);
 

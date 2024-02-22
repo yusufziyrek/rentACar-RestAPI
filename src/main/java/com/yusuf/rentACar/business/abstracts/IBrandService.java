@@ -10,13 +10,13 @@ import com.yusuf.rentACar.business.responses.GetByIdBrandResponse;
 public interface IBrandService {
 
 	List<GetAllBrandsResponse> getAll();
-	
+
 	GetByIdBrandResponse getById(int id);
 
 	void add(CreateBrandRequest creatBrandRequest);
-	
+
 	void update(UpdateBrandRequest updateBrandRequest);
-	
+
 	void delete(int id);
 
 }

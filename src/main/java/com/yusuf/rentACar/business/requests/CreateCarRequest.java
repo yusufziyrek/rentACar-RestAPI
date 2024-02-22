@@ -16,15 +16,12 @@ public class CreateCarRequest {
 	private String plate;
 	
 	@NotNull
-	@NotBlank
 	private double dailyPrice;
 	
 	@NotNull
-	@NotBlank
 	private int modelYear;
 	
 	@NotNull
-	@NotBlank
 	private int modelId;
 
 }

@@ -9,14 +9,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateBrandRequest {
+public class UpdateCarRequest {
 
-	
 	@NotNull
 	private int id;
 
 	@NotNull
 	@NotBlank
-	private String name;
+	private double dailyPrice;
 
 }

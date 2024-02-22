@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.yusuf.rentACar.business.abstracts.ICarService;
 import com.yusuf.rentACar.business.requests.CreateCarRequest;
+import com.yusuf.rentACar.business.requests.UpdateCarRequest;
 import com.yusuf.rentACar.business.responses.GetAllCarsResponse;
 import com.yusuf.rentACar.business.responses.GetByIdCarResponse;
 import com.yusuf.rentACar.business.rules.CarBusinessRules;
@@ -61,6 +62,14 @@ public class CarManager implements ICarService {
 	public void deleteById(int id) {
 
 		this.carRepository.deleteById(id);
+
+	}
+
+	@Override
+	public void update(UpdateCarRequest updateCarRequest) {
+
+		Car car = this.modelMapperService.forRequest().map(updateCarRequest, Car.class);
+		this.carRepository.save(car);
 
 	}
 
