@@ -12,28 +12,32 @@
 
    -Brand operations
 
-   ![Ekran görüntüsü 2024-02-20 200355](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/db59673e-c01c-4159-a65b-42e745ed4683)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/e1827e2e-b2d7-4eca-9d41-8e5060b058cb)
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/843453bc-b64a-410b-9e02-cb9af60b862f)
-
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/2f2b2089-f8d7-4876-8b9c-2960a311a25a)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/6c10b56e-48ad-49d4-9de8-bb61c6c9867e)
 
 
    -Model operations
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/c4739388-8812-4645-8f2c-bf496d2e7cf2)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/cb92c6c2-7de0-44fb-b9c2-0a579e6905f9)
+
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/120acee7-7f5a-483d-8627-1c3a719f17b6)
+
 
    -Car operations
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/647af5f4-9888-4810-a6c4-4eb0af2bc35d)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/b1677d26-c993-43e4-92d0-05cab774d07b)
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/0d2739ed-3736-4483-ab4c-54499af865b4)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/861657d3-e430-4706-b9a3-7ba8ca820a1f)
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/ba9af1cc-1cf0-4e34-9865-027a895f6119)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/de77b0d3-808b-4b65-95ce-6e94510714e3)
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/54a274b5-4fae-4ee3-9ef5-33b233677358)
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/d73f65f2-bb4e-4b72-b83a-5de565272f6f)
 
-   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/8198d729-84e8-4b40-aa55-cb5cc31fa6ca)
+
+
+
+
 
 
 
