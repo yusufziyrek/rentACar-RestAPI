@@ -11,6 +11,7 @@ import com.yusuf.rentACar.business.requests.UpdateCarRequest;
 import com.yusuf.rentACar.business.responses.GetAllCarsResponse;
 import com.yusuf.rentACar.business.responses.GetByIdCarResponse;
 import com.yusuf.rentACar.business.rules.CarBusinessRules;
+import com.yusuf.rentACar.core.utilites.exceptions.CarException;
 import com.yusuf.rentACar.core.utilites.mappers.IModelMapperService;
 import com.yusuf.rentACar.dataAcces.abstracts.ICarRepository;
 import com.yusuf.rentACar.entities.concretes.Car;
@@ -40,7 +41,7 @@ public class CarManager implements ICarService {
 	@Override
 	public GetByIdCarResponse getById(int id) {
 
-		Car car = this.carRepository.findById(id).orElseThrow();
+		Car car = this.carRepository.findById(id).orElseThrow(() -> new CarException("Id not exists !!"));
 
 		GetByIdCarResponse response = this.modelMapperService.forResponse().map(car, GetByIdCarResponse.class);
 
@@ -68,7 +69,11 @@ public class CarManager implements ICarService {
 	@Override
 	public void update(UpdateCarRequest updateCarRequest) {
 
-		Car car = this.modelMapperService.forRequest().map(updateCarRequest, Car.class);
+		Car car = this.carRepository.findById(updateCarRequest.getId())
+				.orElseThrow(() -> new CarException("Id not exists !!"));
+
+		car.setDailyPrice(updateCarRequest.getDailyPrice());
+
 		this.carRepository.save(car);
 
 	}

@@ -1,5 +1,6 @@
 package com.yusuf.rentACar.business.requests;
 
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -16,6 +17,7 @@ public class CreateModelRequest {
 	private String name;
 
 	@NotNull
+	@Min(1)
 	private int brandId;
 
 }

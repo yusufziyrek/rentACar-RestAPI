@@ -41,7 +41,7 @@ public class ModelsController {
 
 	@GetMapping("/{id}")
 	public GetByIdModelResponse getById(@PathVariable int id) {
-		return this.getById(id);
+		return this.modelService.getById(id);
 
 	}
 
@@ -59,7 +59,7 @@ public class ModelsController {
 
 	}
 
-	@DeleteMapping()
+	@DeleteMapping("/{id}")
 	public void delete(@PathVariable int id) {
 		this.modelService.delete(id);
 

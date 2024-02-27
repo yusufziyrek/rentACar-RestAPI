@@ -12,7 +12,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(BrandException.class)
 	public ProblemDetail brandAlreadyExistsException(BrandException e) {
 
-		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "Brand already exists !!");
+		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
 
 		return detail;
 
@@ -21,7 +21,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(ModelException.class)
 	public ProblemDetail modelAlreadyExistsException(ModelException e) {
 
-		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "Model already exists !!");
+		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
 
 		return detail;
 
@@ -29,15 +29,14 @@ public class GlobalExceptionHandler {
 
 	@ExceptionHandler(CarException.class)
 	public ProblemDetail carAlreadyExistsException(CarException e) {
-		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "Car already exists !!");
+		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
 
 		return detail;
 	}
 
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ProblemDetail validException(MethodArgumentNotValidException e) {
-		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST,
-				"Fields cannot be null or blank");
+		ProblemDetail detail = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
 
 		return detail;
 

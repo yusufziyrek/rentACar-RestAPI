@@ -11,6 +11,7 @@ import com.yusuf.rentACar.business.requests.UpdateBrandRequest;
 import com.yusuf.rentACar.business.responses.GetAllBrandsResponse;
 import com.yusuf.rentACar.business.responses.GetByIdBrandResponse;
 import com.yusuf.rentACar.business.rules.BrandBusinessRules;
+import com.yusuf.rentACar.core.utilites.exceptions.BrandException;
 import com.yusuf.rentACar.core.utilites.mappers.IModelMapperService;
 import com.yusuf.rentACar.dataAcces.abstracts.IBrandRepository;
 import com.yusuf.rentACar.entities.concretes.Brand;
@@ -49,7 +50,7 @@ public class BrandManager implements IBrandService {
 	@Override
 	public GetByIdBrandResponse getById(int id) {
 
-		Brand brand = this.brandRepository.findById(id).orElseThrow();
+		Brand brand = this.brandRepository.findById(id).orElseThrow(() -> new BrandException("Id not exists !!"));
 
 		GetByIdBrandResponse response = this.modelMapperService.forResponse().map(brand, GetByIdBrandResponse.class);
 

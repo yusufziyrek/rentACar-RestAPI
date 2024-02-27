@@ -11,6 +11,7 @@ import com.yusuf.rentACar.business.requests.UpdateModelRequest;
 import com.yusuf.rentACar.business.responses.GetAllModelsResponse;
 import com.yusuf.rentACar.business.responses.GetByIdModelResponse;
 import com.yusuf.rentACar.business.rules.ModelBusinessRules;
+import com.yusuf.rentACar.core.utilites.exceptions.ModelException;
 import com.yusuf.rentACar.core.utilites.mappers.IModelMapperService;
 import com.yusuf.rentACar.dataAcces.abstracts.IModelRepository;
 import com.yusuf.rentACar.entities.concretes.Model;
@@ -40,7 +41,7 @@ public class ModelManager implements IModelService {
 	@Override
 	public GetByIdModelResponse getById(int id) {
 
-		Model model = this.modelRepository.findById(id).orElseThrow();
+		Model model = this.modelRepository.findById(id).orElseThrow(() -> new ModelException("Id not exists !!"));
 
 		GetByIdModelResponse response = this.modelMapperService.forResponse().map(model, GetByIdModelResponse.class);
 
@@ -59,7 +60,10 @@ public class ModelManager implements IModelService {
 
 	@Override
 	public void update(UpdateModelRequest updateModelRequest) {
-		Model model = new Model();
+
+		Model model = this.modelRepository.findById(updateModelRequest.getId())
+				.orElseThrow(() -> new ModelException("Id not exists !!"));
+
 		model.setName(updateModelRequest.getName());
 
 		this.modelRepository.save(model);
