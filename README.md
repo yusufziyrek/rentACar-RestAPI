@@ -34,6 +34,18 @@
 
    ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/d73f65f2-bb4e-4b72-b83a-5de565272f6f)
 
+   # Exceptions
+
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/d5135a79-a511-4f51-aeb4-f9cbff20ce2e)
+
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/6d53398f-f80a-4ff8-9c92-0c7536553ca8)
+
+   ![image](https://github.com/yusufziyrek/RentACar-RestAPI/assets/147656327/9031c73f-c7f0-4549-a52c-4c2ad4790e07)
+
+
+
+   
+
 
 
 
