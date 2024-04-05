@@ -6,7 +6,7 @@
  - Response/Request pattern
  - Dependency Injection
  - Inversion of Control (IoC)
- - Object Relational Mapping (ORM)
+ - Object Relational Mapping (ORM) 
 
    # Preview
 
